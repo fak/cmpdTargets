@@ -8,7 +8,7 @@
     momo.sander@googlemail.com
 """
 
-def getPfam(release):
+def master(release):
     import queryDevice
     import os
     import yaml
@@ -102,5 +102,5 @@ if __name__ == '__main__':
     if len(sys.argv) != 2: # the program name and the two arguments 
         sys.exit("Must specify path to file, release, user, pword, host, port")
     release = sys.argv[1]
-    redThread(release)
+    master(release)
 
