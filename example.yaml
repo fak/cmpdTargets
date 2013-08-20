@@ -1,0 +1,10 @@
+--- # File paths
+src_id: 1 #query activities from the scientific literature.
+release: chembl_15
+user: <user>
+pword: <pword>
+host: <host>
+port: <port>
+query_name: 'imatinib'
+
+
