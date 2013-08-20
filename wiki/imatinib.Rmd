@@ -1,0 +1,39 @@
+ Research notes Felix A Kruger
+>email: fkrueger@ebi.ac.uk
+>This document was compiled using knitr:
+
+    library(knitr)
+    knit('summary.Rmd')
+
+```{r}
+read_chunk('../summaryPlots.R')
+```
+
+## Summary
+The database was queried for assays involving Imatinib (CHEMBL941). The query was limited to the activity types 'EC50', 'IC50', 'Kd', 'Ki', 'Potency'. It could be that additional activities would crop up if these terms were expanded, but from experience, there would not be much gain in the signal. The query was limited to activities reported in the literature. Reported targets are either direct mappings or homologs (usually orthologs or higher order terms, such as a protein family).
+
+Activities were only recorded if the associated IC50 values were lower or equal to 10 micromolar. In case we would like to find more off-targets, this threshold could be softened a bit. However, the concentrations used in the assays are already quite high. 
+
+
+
+
+## Data processing.
+```{r}
+infile <- "../data/imatinib_results.tab"
+assigned_target = "bcr-abl"
+```
+
+```{r load}
+```
+```{r prepData}
+```
+
+## Binding assay records from ChEMBL. 
+
+```{r plot, dev  ='svg', fig.width=6, fig.height=10, fig.show = 'hold', fig.path="figure/imatinib_" }
+```
+```{r plot_it }
+```
+
+
+
